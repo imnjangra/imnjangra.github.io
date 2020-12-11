@@ -1,0 +1,49 @@
+
+<nav class="nav" id="nav">
+  <div class="dark-toggle">
+    <div onclick="darkMode()" class="toggle-outer" id="toggle-outer">
+      <div class="toggle-inner" id="toggle-inner"></div>
+    </div>
+    <i class="icon-m fas fa-adjust"></i> </div>
+    <a href="/" >
+  <img href="/" alt="Logo" class="logo-nav" src="./images/njangra-logo.svg" >
+    </a>
+  <div class="menu">
+    <div onclick="menuTrigger()" class="menu-inner">
+      <div id="menu-state-1"></div>
+      <div id="menu-state-2"></div>
+      <h6 id="menu-tag">MENU</h6>
+      <h6 id="close-tag">BACK</h6>
+    </div>
+  </div>
+</nav>
+<nav class="menu-whole">
+  <div class="menu-bg-1"></div>
+  <div class="menu-bg-2"></div>
+  <div id="menu-content">
+    <div class="menu-pages"> <a onclick="menuTrigger()" href="/" class="menu-page page-one">
+      <h3>Home</h3>
+      </a> <a onclick="menuTrigger()" href="./projects.html" class="menu-page page-two">
+      <h3>Projects</h3>
+      </a> <a onclick="menuTrigger()" href="#contact" class="menu-page page-three">
+      <h3>Contact</h3>
+      </a> <a onclick="menuTrigger()" href="/" class="menu-page page-four">
+      <h3>Get Quote</h3>
+      </a>
+		</div>
+    <div class="menu-font-sizes-outer"> <em class="font-size-desc">Change font size</em>
+      <div class="menu-font-sizes">
+        <div id="f-small" onclick="fSmall()">
+          <p style="font-size: calc(var(--font-size-base) * 1);">A</p>
+        </div>
+        <div id="f-medium" onclick="fMedium()">
+          <p style="font-size: calc(var(--font-size-base) * 1.7);">A</p>
+        </div>
+        <div id="f-large" onclick="fLarge()">
+          <p style="font-size: calc(var(--font-size-base) * 2.4);">A</p>
+        </div>
+      </div>
+    </div>
+  <img alt="Logo" class="logo-menu" src="./images/njangra-logo.svg">
+	</div>
+</nav>
