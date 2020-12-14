@@ -1,3 +1,13 @@
+setTimeout(function(){
+            $('.preloader p').addClass('loaded').text('loaded');
+            $('.line_loader').addClass('loaded');
+            setTimeout(function(){ $('.preloader').addClass('preloader_hide'); },200);
+            setTimeout(function(){ $('.overlay , .overlay2').addClass('change');
+                setTimeout(function(){ $('.overlay , .overlay2 , .preloader').fadeOut(); },1000);
+            },600);
+        },650);
+
+
 function scrollToTop() {
   $("body,html").animate({
     scrollTop: 0
