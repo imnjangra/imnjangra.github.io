@@ -15,6 +15,9 @@
     --warning: #F2B705;
     --toggle-position: 25px;
     --rotate: 0deg;
+    --contrast: #112d4e;
+    --bgColor: #defcf9;
+    --fontColor: #112d4e;	  
 			
     --h1-mult: 4;
     --h2-mult: 3;
@@ -1914,6 +1917,8 @@
 }
 
 /* loader style end */
+
+/* intro landing */
 
 #main {
   min-height: 100vh;
