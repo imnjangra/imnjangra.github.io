@@ -1915,3 +1915,15 @@
 
 /* loader style end */
 
+.qrop_intro {
+	margin: 170px 0 90px;
+}
+
+.qrop_intro h2 {
+	font-size: 70px;
+	font-weight: 700;
+}
+
+.cd-words-wrapper b {
+	color: #2564e4;
+}
