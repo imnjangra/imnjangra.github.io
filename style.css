@@ -14,8 +14,7 @@
     --danger: #ec0053;
     --warning: #F2B705;
     --toggle-position: 25px;
-    --rotate: 0deg;
-    --fontColor: rgb(0, 0, 0, 0.1);	  
+    --rotate: 0deg;  
 			
     --h1-mult: 4;
     --h2-mult: 3;
@@ -1928,6 +1927,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.box {
+  padding: 0px 10px;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--fontColor);
 }
 
 
