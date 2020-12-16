@@ -401,20 +401,11 @@ const showMainAnimation = (parent) => {
   box.classList.add("box", "flex");
   parent.appendChild(boxContainer);
   boxContainer.appendChild(box);
-  const subquote = ["The", "name", "is"];
   const quote = ["NAVJOT", "JANGRA"];	
 	
   let delay = 0;
   // Add all the words
-	 for (let word in subquote){
-    let text = document.createElement("div");
-    text.textContent = quote[word];
-    text.classList.add("flex");
-    delay = delay + 1;
-    text.style.animationDelay = delay + "ms";
-    box.appendChild(text);}
-	
-  for (let word in quote){
+	 for (let word in quote){
     let text = document.createElement("span");
     text.textContent = quote[word];
     text.classList.add("animate-slideup");
