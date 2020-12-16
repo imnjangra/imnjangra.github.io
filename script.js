@@ -401,7 +401,7 @@ const showMainAnimation = (parent) => {
   box.classList.add("box", "flex");
   parent.appendChild(boxContainer);
   boxContainer.appendChild(box);
-  const quote = ["Simple", "is", "the", "new", "sexy"];
+  const quote = ["NAVJOT", "JANGRA"];
   let delay = 0;
   // Add all the words
   for (let word in quote){
