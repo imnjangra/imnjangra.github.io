@@ -1934,8 +1934,8 @@
   font-style: normal;	
   font-size: 60px;
   font-weight: 900;
-  color: var(--danger);
-  text-shadow: 2px 2px 50px black;	
+  color: var(--light-inner);
+  text-shadow: black;	
 }
 
 
@@ -1958,7 +1958,7 @@
 .fs {
   height: 12px;
   width: 12px;
-  background-color: var(--light-inner);
+  background-color: var(--danger);
   margin-left: -16px;
   margin-top: 28px;
   opacity: 0;
