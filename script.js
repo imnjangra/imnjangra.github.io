@@ -407,10 +407,10 @@ const showMainAnimation = (parent) => {
   let delay = 0;
   // Add all the words
 	 for (let word in subquote){
-    let text = document.createElement("span");
+    let text = document.createElement("div");
     text.textContent = quote[word];
-    text.classList.add("");
-    delay = delay + 22;
+    text.classList.add("flex");
+    delay = delay + 1;
     text.style.animationDelay = delay + "ms";
     box.appendChild(text);}
 	
