@@ -1959,7 +1959,7 @@
   margin-left: -16px;
   margin-top: 28px;
   opacity: 0;
-  animation: rotate-fs 1800ms cubic-bezier(0.5, 1, 0.89, 1) forwards;
+  animation: rotate-fs 3000ms cubic-bezier(0.5, 1, 0.89, 1) forwards;
   transform-origin: center;
 }
 
