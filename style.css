@@ -17,7 +17,7 @@
     --rotate: 0deg;
     --contrast: #112d4e;
     --bgColor: #defcf9;
-    --fontColor: #112d4e;	  
+    --fontColor: rgb(0, 0, 0, 0.1);	  
 			
     --h1-mult: 4;
     --h2-mult: 3;
