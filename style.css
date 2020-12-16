@@ -1930,9 +1930,11 @@
 }
 .box {
   padding: 0px 10px;
+  font-family: interstate-mono, monospace;  
+  font-style: normal;	
   font-size: 60px;
   font-weight: bold;
-  color: var(--danger);
+  color: var(--light-inner);
 }
 
 
