@@ -420,6 +420,13 @@ const showMainAnimation = (parent) => {
   text.style.animationDelay = lastAnimationTime - 100 + "ms";
   box.appendChild(text);
 };
+for{
+  // Add full stop
+  let text = document.createElement("div");
+  text.classList.add("c-scrolldown", "flex");
+  text.style.animationDelay = lastAnimationTime - 100 + "ms";
+  box.appendChild(text);
+};
 
 const revealCurtain = (parent) => {
   const curtain = document.createElement("div");
