@@ -1995,8 +1995,8 @@
     /* IE 10+, Fx 29+ */
     
     position: absolute;
-    margin-top: 60px;
-    left: 10%;
+    margin-top: 100px;
+    left: 50%;
     margin-left: -1px;
     width: 2px;
     height: 90px;
