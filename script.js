@@ -419,6 +419,12 @@ const showMainAnimation = (parent) => {
   text.classList.add("fs", "flex");
   text.style.animationDelay = lastAnimationTime - 100 + "ms";
   box.appendChild(text);
+
+  let scrolldown = document.createElement("div");
+  scrolldown.classList.add("scroll-down", "flex");
+  scrolldown.style.animationDelay = lastAnimationTime - 100 + "ms";
+  box.appendChild(scrolldown);	
+	
 };
 
 
