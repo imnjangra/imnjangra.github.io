@@ -2267,5 +2267,8 @@
     margin-left: -1px;
     margin-top: 13px;
   }
+	.scroll-down::before {
+		left: 5%;
+	}
 }
 
