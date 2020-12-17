@@ -2000,7 +2000,7 @@
     margin-left: -1px;
     width: 2px;
     height: 90px;
-    background: #b91a2f;
+    background: var(--light-inner);
     content: ' ';
 }
 @-webkit-keyframes elasticus {
