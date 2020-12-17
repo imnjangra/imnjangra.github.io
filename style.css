@@ -1981,6 +1981,40 @@
   }
 }
 
+.c-scrolldown {
+	width: 1px;
+	height: $line-height;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	.c-line {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+		background-position: 0 $line-height-abs;
+		background-size: 100% 200%;
+		animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+	}
+}
+
+@keyframes scrolldown {
+	0%{
+		background-position: 0 $line-height-abs;
+	}
+	75% {
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 0 $line-height;
+	}
+}
+
+
 .curtain {
   position: fixed;
   background-color: var(--contrast);
