@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^me$ /index.html [L,R=301]
