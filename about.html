@@ -1,227 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>About Me</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <style>
-      /* styles.css */
+<html lang="en">
 
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<meta charset="UTF-8">
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+<title>N Jangra</title>
+  <meta name="description" content="See my projects">
+  <meta name="author" content="Navjot Jangra">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+  <link href="./images/njangra-logo-black.png" rel="icon">
+  <link href="./images/njangra-logo-black.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" rel="preload" href="https://use.typekit.net/ddb6odm.css">
 
-h1, h2, h3 {
-  margin-top: 0;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a {
-  color: #007bff;
-}
-
-/* Animation Styles */
-@keyframes slideup {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes progressGrow {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.animate {
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-}
-
-.animate-slideup {
-  animation-name: slideup;
-}
-
-.progressBar {
-  height: 5px;
-  background-color: #007bff;
-  animation-name: progressGrow;
-  animation-duration: 1s;
-}
-
-.progressGrow-animation {
-  animation-duration: 2s;
-}
-
-/* Profile Picture Styles */
-.profile-picture {
-  width: 150px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Experience Item Styles */
-.experience-item {
-  margin-bottom: 20px;
-}
-
-.experience-item h3 {
-  margin-top: 0;
-}
-
-/* Curtain Styles */
-.curtain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f8f9fa;
-  z-index: -1;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-}
-
-    </style>
-</head>
 <body>
-  <header></header>
-  
-  <div class="curtain"></div>
-  <div class="progressBar progressGrow-animation"></div>
-  <div class="container">
-    <div class="flex">
-      <div class="animate animate-slideup">
-        <img src="profile_picture.jpg" alt="Profile Picture" class="profile-picture">
-      </div>
-      <div class="animate animate-slideup">
-        <h1>Navjot Jangra</h1>
-        <p>Email: imnavjotjangra@gmail.com</p>
-        <p>LinkedIn: <a href="linkedin.com/in/njangra">linkedin.com/in/njangra</a></p>
-        <p>Website: <a href="https://imnjangra.github.io/me/">imnjangra.github.io/me/</a></p>
-      </div>
-    </div>
-    <div class="animate animate-slideup">
-      <h2>Summary</h2>
-      <p>I am Navjot Jangra, a motivated and passionate individual from Chandigarh, India. As a student, researcher, and data analyst, I have spent the last three years coding programs and honing my skills in web development. I am currently pursuing a Bachelor of Science degree in Data Science and Applications at the esteemed Indian Institute of Technology, Madras. With a drive for excellence, I am dedicated to making a meaningful impact in the industry.</p>
-    </div>
-    <div class="animate animate-slideup">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Treasurer</h3>
-        <p>CCET ACM Student Chapter</p>
-        <p>Sep 2021 - Aug 2022 (1 year)</p>
-        <ul>
-          <li>Successfully managed and maintained the financial records of the chapter.</li>
-          <li>Facilitated the planning and organization of various events and activities.</li>
-          <li>Led fundraising efforts for the chapter.</li>
-          <li>As a designer and lead editor of the ACM CCET magazine "Digital Outlet," I created visually appealing layouts.</li>
-          <li>I also co-organized a two-day workshop where I conducted hands-on sessions, guiding the audience on fundamental data analysis concepts and various commonly used machine learning algorithms in Python.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Webmaster - CCET ACM WEBSITE</h3>
-        <p>CCET ACM Student Chapter</p>
-        <p>Dec 2021 - May 2022 (6 months)</p>
-        <ul>
-          <li>Developed and maintained the official website of the CCET ACM Student Chapter.</li>
-          <li>Managed the website's content, design, and functionality.</li>
-          <li>Improved the user experience of the website through regular updates and enhancements.</li>
-          <li>ACM CCET STUDENT CHAPTER won the Outstanding Chapter Website Award for year 2022.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Editor - FINGERPRINT (NEWSLETTER)</h3>
-        <p>Chandigarh College of Engineering & Technology (Degree Wing), Panjab University</p>
-        <p>Jun 2020 - May 2022 (2 years)</p>
-        <ul>
-          <li>Managed the editorial content of the Fingerprint newsletter.</li>
-          <li>Worked with a team to create and publish high-quality articles, stories, and updates.</li>
-          <li>Coordinated with designers to create visually appealing layouts and designs.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Design Head - FINGERPRINT (NEWSLETTER)</h3>
-        <p>Chandigarh College of Engineering & Technology (Degree Wing), Panjab University</p>
-        <p>Jun 2020 - May 2022 (2 years)</p>
-        <ul>
-          <li>Co-Led the design team to create engaging and visually appealing layouts for the Fingerprint newsletter.</li>
-          <li>Collaborated with the editorial team to ensure that the design complemented the content.</li>
-          <li>Maintained consistency across all design materials.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Executive Member</h3>
-        <p>CCET ACM Student Chapter</p>
-        <p>Apr 2021 - Sep 2021 (6 months)</p>
-        <ul>
-          <li>Participated in the logo making competition organized by the ACM CCET Student Chapter, where my winning entry was selected as the official replacement for the chapter logo.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Intern</h3>
-        <p>Code Heroku</p>
-        <p>Mar 2021 - May 2021 (3 months)</p>
-        <ul>
-          <li>Created graphics and performed video editing for various projects.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="animate animate-slideup">
-      <h2>Education</h2>
-      <p>Indian Institute of Technology, Madras</p>
-      <p>Bachelor of Science - BS, Data Science and Applications</p>
-      <p>May 2021 - Sep 2024</p>
-    </div>
-    <div class="animate animate-slideup">
-      <h2>Licenses &amp; Certifications</h2>
-      <ul>
-        <li>Introduction To Industry 4.0 And Industrial Internet Of Things - NPTEL Swayam</li>
-        <li>Introduction To Internet Of Things - NPTEL Swayam</li>
-      </ul>
-    </div>
-    <div class="animate animate-slideup">
-      <h2>Skills</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>Web Design</li>
-        <li>Python (Programming Language)</li>
-        <li>Software Development</li>
-        <li>Graphic Design</li>
-        <li>Data Science</li>
-        <li>HTML5</li>
-        <li>Microsoft Excel</li>
-        <li>JavaScript</li>
-        <li>Cascading Style Sheets (CSS)</li>
-      </ul>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+<header></header>
+
+<br /><br /> <br /><br /> <br /><br />
+<div class="section-outer projects-section anchor" id="projects">
+    <div class="section-heading" style="padding: 20px;">
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+<footer></footer>
+ <script  src="./script.js"></script>
+ <script src="  //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>
+<script src="https://kit.fontawesome.com/4811d1da4d.js" crossorigin="anonymous" async></script>
 </body>
-</html>
