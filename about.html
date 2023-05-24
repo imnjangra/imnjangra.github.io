@@ -112,46 +112,10 @@ ul {
   color: #555;
 }
 
-/* Loading Animation */
-.curtain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.progressBar {
-  width: 200px;
-  height: 20px;
-  background-color: #eee;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.progressGrow-animation {
-  animation: progressGrow 2s ease-in-out;
-}
-
-@keyframes progressGrow {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
     </style>
 </head>
 <body>
-    <div class="curtain">
-        <div class="progressBar progressGrow-animation"></div>
-    </div>
 
     <div class="about">
         <h1>About Me</h1>
