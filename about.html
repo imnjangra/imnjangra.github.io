@@ -1,145 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <style>
+        /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-<meta charset="UTF-8">
-    
-<title>N Jangra</title>
-  <meta name="description" content="See my projects">
-  <meta name="author" content="Navjot Jangra">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-  <link href="./images/njangra-logo-black.png" rel="icon">
-  <link href="./images/njangra-logo-black.png" rel="apple-touch-icon">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" rel="preload" href="https://use.typekit.net/ddb6odm.css">
+h1, h2, h3 {
+  color: #333;
+}
 
+p {
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+/* Page Structure */
+.about {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+.about ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Experience Section */
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+/* Education Section */
+.education {
+  margin-bottom: 30px;
+}
+
+.education h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Certifications Section */
+.certifications {
+  margin-bottom: 30px;
+}
+
+.certifications li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+/* Skills Section */
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills li {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+/* Loading Animation */
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBar {
+  width: 200px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressGrow-animation {
+  animation: progressGrow 2s ease-in-out;
+}
+
+@keyframes progressGrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+    </style>
+</head>
 <body>
+    <div class="curtain">
+        <div class="progressBar progressGrow-animation"></div>
+    </div>
 
-<header></header>
-
-<br /><br /> <br /><br /> <br /><br />
-
-  
-  <section id="summary">
-    <h2>Summary</h2>
-    <p>
-      I am Navjot Jangra, a motivated and passionate individual from Chandigarh, India. As a student, researcher, and data analyst, I have spent the last three years coding programs and honing my skills in web development. I am currently pursuing a Bachelor of Science degree in Data Science and Applications at the esteemed Indian Institute of Technology, Madras. With a drive for excellence, I am dedicated to making a meaningful impact in the industry.
-    </p>
-  </section>
-  
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <h3>Treasurer - CCET ACM Student Chapter</h3>
-        <p>Sep 2021 - Aug 2022 (1 year)</p>
-        <ul>
-          <li>Successfully managed and maintained the financial records of the chapter.</li>
-          <li>Facilitated the planning and organization of various events and activities.</li>
-          <li>Led fundraising efforts for the chapter.</li>
-          <li>As a designer and lead editor of the ACM CCET magazine "Digital Outlet," I created visually appealing layouts.</li>
-          <li>Co-organized a two-day workshop where I conducted hands-on sessions, guiding the audience on fundamental data analysis concepts and various commonly used machine learning algorithms in Python.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Webmaster - CCET ACM WEBSITE</h3>
-        <p>Dec 2021 - May 2022 (6 months)</p>
-        <ul>
-          <li>Developed and maintained the official website of the CCET ACM Student Chapter.</li>
-          <li>Managed the website's content, design, and functionality.</li>
-          <li>Improved the user experience of the website through regular updates and enhancements.</li>
-          <li>ACM CCET STUDENT CHAPTER won the Outstanding Chapter Website Award for the year 2022.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Editor - FINGERPRINT (NEWSLETTER)</h3>
-        <p>Chandigarh College of Engineering &amp; Technology (Degree Wing), Panjab University</p>
-        <p>Jun 2020 - May 2022 (2 years)</p>
-        <ul>
-          <li>Managed the editorial content of the Fingerprint newsletter.</li>
-          <li>Worked with a team to create and publish high-quality articles, stories, and updates.</li>
-          <li>Coordinated with designers to create visually appealing layouts and designs.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Design Head - FINGERPRINT (NEWSLETTER)</h3>
-        <p>Chandigarh College of Engineering &amp; Technology (Degree Wing), Panjab University</p>
-        <p>Jun 2020 - May 2022 (2 years)</p>
-        <ul>
-          <li>Co-Led the design team to create engaging and visually appealing layouts for the Fingerprint newsletter.</li>
-          <li>Collaborated with the editorial team to ensure that the design complemented the content.</li>
-          <li>Maintained consistency across all design materials.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Executive Member - CCET ACM Student Chapter</h3>
-        <p>Apr 2021 - Sep 2021 (6 months)</p>
-        <ul>
-          <li>Participated in the logo making competition organized by the ACM CCET Student Chapter, where my winning entry was selected as the official replacement for the chapter logo.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Intern - Code Heroku</h3>
-        <p>Mar 2021 - May 2021 (3 months)</p>
-        <ul>
-          <li>Created graphics and performed video editing for various projects.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>Indian Institute of Technology, Madras</h3>
-        <p>Bachelor of Science - BS, Data Science and Applications</p>
-        <p>May 2021 - Sep 2024</p>
-      </li>
-    </ul>
-  </section>
-  
-  <section id="certifications">
-    <h2>Licenses &amp; Certifications</h2>
-    <ul>
-      <li>Introduction To Industry 4.0 And Industrial Internet Of Things - NPTEL Swayam</li>
-      <li>Introduction To Internet Of Things - NPTEL Swayam</li>
-    </ul>
-  </section>
-  
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Web Design</li>
-      <li>Python (Programming Language)</li>
-      <li>Software Development</li>
-      <li>Graphic Design</li>
-      <li>Data Science</li>
-      <li>HTML5</li>
-      <li>Microsoft Excel</li>
-      <li>JavaScript</li>
-      <li>Cascading Style Sheets (CSS)</li>
-    </ul>
-  </section>
-  
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: imnavjotjangra@gmail.com</li>
-      <li>LinkedIn: <a href="linkedin.com/in/njangra">linkedin.com/in/njangra</a></li>
-      <li>Portfolio: <a href="https://imnjangra.github.io/me/">imnjangra.github.io/me</a></li>
-    </ul>
-  </section>
-  
-
-
-
-
-
-<footer></footer>
- <script  src="./script.js"></script>
- <script src="  //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>
-<script src="https://kit.fontawesome.com/4811d1da4d.js" crossorigin="anonymous" async></script>
+    <div class="about">
+        <h1>About Me</h1>
+        <p>I am Navjot Jangra, a motivated and passionate individual from Chandigarh, India. As a student, researcher, and data analyst, I have spent the last three years coding programs and honing my skills in web development. I am currently pursuing a Bachelor of Science degree in Data Science and Applications at the esteemed Indian Institute of Technology, Madras. With a drive for excellence, I am dedicated to making a meaningful impact in the industry.</p>
+        
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Treasurer - CCET ACM Student Chapter</h3>
+            <p>Sep 2021 - Aug 2022 (1 year)</p>
+            <ul>
+                <li>Successfully managed and maintained the financial records of the chapter.</li>
+                <li>Facilitated the planning and organization of various events and activities.</li>
+                <li>Led fundraising efforts for the chapter.</li>
+                <li>Designed and edited layouts for the ACM CCET magazine "Digital Outlet".</li>
+                <li>Co-organized a two-day workshop on data analysis and machine learning in Python.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Webmaster - CCET ACM WEBSITE</h3>
+            <p>Dec 2021 - May 2022 (6 months)</p>
+            <ul>
+                <li>Developed and maintained the official website of the CCET ACM Student Chapter.</li>
+                <li>Managed the website's content, design, and functionality.</li>
+                <li>Improved the user experience through regular updates and enhancements.</li>
+                <li>Received the Outstanding Chapter Website Award for the year 2022.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Editor - FINGERPRINT (NEWSLETTER)</h3>
+            <p>Jun 2020 - May 2022 (2 years)</p>
+            <ul>
+                <li>Managed the editorial content of the Fingerprint newsletter.</li>
+                <li>Collaborated with a team to create and publish high-quality articles, stories, and updates.</li>
+                <li>Coordinated with designers to create visually appealing layouts and designs.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Design Head - FINGERPRINT (NEWSLETTER)</h3>
+            <p>Jun 2020 - May 2022 (2 years)</p>
+            <ul>
+                <li>Co-Led the design team to create engaging and visually appealing layouts for the Fingerprint newsletter.</li>
+                <li>Ensured the design complemented the content and maintained consistency.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Executive Member - CCET ACM Student Chapter</h3>
+            <p>Apr 2021 - Sep 2021 (6 months)</p>
+            <ul>
+                <li>Winner of the logo making competition organized by the ACM CCET Student Chapter.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3>Intern - Code Heroku</h3>
+            <p>Mar 2021 - May 2021 (3 months)</p>
+            <ul>
+                <li>Created graphics and performed video editing for various projects.</li>
+            </ul>
+        </div>
+        
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Indian Institute of Technology, Madras</h3>
+            <p>Bachelor of Science - BS, Data Science and Applications</p>
+            <p>May 2021 - Sep 2024</p>
+        </div>
+        
+        <h2>Licenses & Certifications</h2>
+        <div class="certifications">
+            <ul>
+                <li>Introduction To Industry 4.0 And Industrial Internet Of Things - NPTEL Swayam</li>
+                <li>Introduction To Internet Of Things - NPTEL Swayam</li>
+            </ul>
+        </div>
+        
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Web Development</li>
+                <li>Web Design</li>
+                <li>Python (Programming Language)</li>
+                <li>Software Development</li>
+                <li>Graphic Design</li>
+                <li>Data Science</li>
+                <li>HTML5</li>
+                <li>Microsoft Excel</li>
+                <li>JavaScript</li>
+                <li>Cascading Style Sheets (CSS)</li>
+            </ul>
+        </div>
+    </div>
 </body>
+</html>
